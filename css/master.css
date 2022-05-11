@@ -9,6 +9,8 @@
     width: 800px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+
 }
 h2{
     font-size: 0.8em;
@@ -26,7 +28,7 @@ header{
 .categories a{
     color:white;
     text-decoration: none;
-    padding: 0 5px;
+    padding: 5px;
 }
 .logo img{
     height: 40px;
@@ -55,14 +57,32 @@ header{
 }
 
 /*--------------------------------------------------------------------------------MAIN*/
-.photo{
-    margin: 40px 5px 5px 0;
-    width: calc( 100% / 3 );
+.item{
+    margin: 40px 5px 0;
+    width: calc( 100% / 3 - 10px);
     position: relative;
 }
 .photo img{
     width: 100%;
 }
+.photo img:first-child{
+    position: absolute;
+    z-index: 1;
+}
+.photo:hover img:first-child{
+    display: none;
+}
+.item .photo img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.photo{
+    min-height: 375px;
+    position: relative;
+}
+
 .price{
     color:red;
 }
@@ -74,9 +94,30 @@ header{
 .info-added{
     display: flex;
     color: white;
-    position: relative;
+    position: absolute;
     bottom: 100px;
     z-index: 1;
+}
+.like{
+    position: absolute;
+    z-index: 3;
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.like:hover{
+    color: red;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    position: relative;
 }
 .discount-in-perc{
     background-color: red;
@@ -86,4 +127,19 @@ header{
     background-color: green;
     margin-left: 2px;
     padding: 3px 5px;
+}
+/*--------------------------------------------------------------------------------FOOTER*/
+
+footer{
+    background-color: black;
+
+}
+footer .container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+footer .div{
+    padding: 5px ;
 }
