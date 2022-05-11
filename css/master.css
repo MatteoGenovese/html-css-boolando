@@ -24,10 +24,14 @@ header{
     background-color: #ED722E;   
     display: flex;
     align-items: center;
-
-
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
-
+header a:hover {
+    background: white;
+    color: #ED722E;
+  }
 .categories a{
     color:white;
     text-decoration: none;
@@ -59,6 +63,10 @@ header{
 }
 
 /*--------------------------------------------------------------------------------MAIN*/
+main{
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
 .item{
     margin: 40px 5px 0;
     width: calc( 100% / 3 - 10px);
@@ -134,7 +142,6 @@ header{
 
 footer{
     background-color: black;
-
 }
 footer .container{
     color: white;
