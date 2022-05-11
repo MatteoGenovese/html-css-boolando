@@ -10,7 +10,6 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-
 }
 h2{
     font-size: 0.8em;
@@ -23,6 +22,10 @@ h3{
 header{
     height: 70px;
     background-color: #ED722E;   
+    display: flex;
+    align-items: center;
+
+
 }
 
 .categories a{
@@ -37,21 +40,20 @@ header{
     color: white;
     padding: 0 5px;
 }
-
 .categories{
     display: flex;
-    flex-basis: 10%;
+    flex-basis: 25%;
     align-items: center;
 }
 .logo{
     display: flex;
-    flex-basis: 80%;
+    flex-basis: 50%;
     justify-content: center;
     align-items: center;
 }
 .profile{
     display: flex;
-    flex-basis: 10%;
+    flex-basis: 25%;
     justify-content: right;
     align-items: center;
 }
@@ -139,6 +141,7 @@ footer .container{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 footer .div{
     padding: 5px ;
