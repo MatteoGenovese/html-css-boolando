@@ -1,0 +1,89 @@
+/*--------------------------------------------------------------------------------RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+h2{
+    font-size: 0.8em;
+    color: gray;
+}
+h3{
+    font-size: 1em;
+}
+/*--------------------------------------------------------------------------------HEADER*/
+header{
+    height: 70px;
+    background-color: #ED722E;   
+}
+
+.categories a{
+    color:white;
+    text-decoration: none;
+    padding: 0 5px;
+}
+.logo img{
+    height: 40px;
+}
+.profile i{
+    color: white;
+    padding: 0 5px;
+}
+
+.categories{
+    display: flex;
+    flex-basis: 10%;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    flex-basis: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    flex-basis: 10%;
+    justify-content: right;
+    align-items: center;
+}
+
+/*--------------------------------------------------------------------------------MAIN*/
+.photo{
+    margin: 40px 5px 5px 0;
+    width: calc( 100% / 3 );
+    position: relative;
+}
+.photo img{
+    width: 100%;
+}
+.price{
+    color:red;
+}
+.discounted::after{
+    content: " 29.99 \20AC";
+    text-decoration: line-through;
+    color: gray;
+}
+.info-added{
+    display: flex;
+    color: white;
+    position: relative;
+    bottom: 100px;
+    z-index: 1;
+}
+.discount-in-perc{
+    background-color: red;
+    padding: 3px 5px;
+}
+.sustainability-box{
+    background-color: green;
+    margin-left: 2px;
+    padding: 3px 5px;
+}
